@@ -1,0 +1,18 @@
+output:
+  c:
+    library_name: jnigen_app
+    path: src/
+  dart:
+    path: lib/
+    structure: package_structure
+
+class_path:
+    - 'jar_dir/jackson-core-2.13.4.jar'
+
+classes:
+  - 'com.fasterxml.jackson.core.JsonFactory'
+  - 'com.fasterxml.jackson.core.JsonParser'
+  - 'com.fasterxml.jackson.core.JsonToken'
+
+summarizer:
+    backend: asm
